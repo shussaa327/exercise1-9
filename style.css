@@ -23,22 +23,25 @@ main{
 	float: left;
 	position: relative;
 }
-
-.guide:nth-child(3){
-	margin-right: 0px;
+/*:nth-child(3)から変更。last-childの方が適切*/
+.guide:last-child{
+	margin-right: 0;
 }
-
+/*画像の縦横比率が変わってしまった為、autoで自動で設定できる*/
 .guide-image{
 	width: 280px;
+	height: auto;
 }
 
 .step-number{
-	width: 50px;
-	height: 25px;
-	text-align: center;
 	background-color: orange;
 	color: white;
+	padding: 3px;
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+.title{
+	margin: 15px 0 5px;
 }
